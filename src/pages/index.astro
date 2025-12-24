@@ -113,27 +113,38 @@ import Layout from '../layouts/Layout.astro';
     <!-- Current Focus -->
     <section class="mb-10">
       <h2 class="mb-4 pb-2 border-b border-gray-200">Current focus</h2>
-
+    
       <ul class="text-gray-700 space-y-3">
         <li>
           <span class="font-semibold text-gray-900">SenTeGuard:</span>
-          Preventing semantic leakage and unsafe disclosure in day-to-day LLM workflows (copy, export,
-          share, and AI chat boundaries).
+          A security layer for enterprise GenAI that detects and blocks risky content flows at the point of use,
+          especially semantic leakage when employees summarize, paraphrase, translate, or abstract sensitive material.
         </li>
+    
+        <li>
+          <span class="font-semibold text-gray-900">Moyo:</span>
+          A prototype “information-space mapper” that crawls and maps an organization’s public-facing knowledge surface,
+          then measures how close internal concepts are to becoming externally reachable through LLMs, search, and
+          retrieval tools. I use it for outside-in risk discovery and targeted AI red-teaming that feeds directly into
+          concrete controls and SenTeGuard deployments.
+        </li>
+    
+        <li>
+          <span class="font-semibold text-gray-900">Joseki / WrapperHub:</span>
+          A prototype prompt-spec marketplace and version-control layer for reusable AI workflows. The goal is to make
+          prompts and agentic “recipes” auditable, testable, and governable: with changelogs, licensing, security scoring,
+          and organization-level guardrails for how prompts are shared and reused.
+        </li>
+    
         <li>
           <span class="font-semibold text-gray-900">Cognitive Security Standards (CSS):</span>
-          A governance and controls framework for meaning-based security, aligned with modern risk
-          management and enterprise compliance.
-        </li>
-        <li>
-          <span class="font-semibold text-gray-900">Policy research:</span>
-          AI governance and national-security implications of LLM capability growth, including “reachability”
-          and inference-based boundary erosion.
+          A governance and controls framework for meaning-based security and “boundary maintenance,” designed to align with
+          enterprise compliance constraints and export-controlled technical data regimes.
         </li>
       </ul>
     </section>
-
-    <!-- Research Interests -->
+    
+    <!-- Research interests -->
     <section class="mb-10">
       <h2 class="mb-4 pb-2 border-b border-gray-200">Research interests</h2>
       <ul class="text-gray-700 space-y-2">
@@ -141,6 +152,12 @@ import Layout from '../layouts/Layout.astro';
         <li>Enterprise “cognitive firewalls” and boundary maintenance for LLM applications</li>
         <li>Governance and compliance for GenAI deployment in regulated environments</li>
         <li>National security and cyberwarfare policy in the LLM era</li>
+        <li>
+          <span class="font-semibold text-gray-900">Infinitis (essay series):</span>
+          Three articles on (1) Gödelian foundations for mapping “reachable” ideas, (2) discrete vs. continuous idea space
+          and what that implies for AI capability growth, and (3) idea compressibility and shareability as the mechanism
+          behind modern semantic leakage.
+        </li>
       </ul>
     </section>
 
