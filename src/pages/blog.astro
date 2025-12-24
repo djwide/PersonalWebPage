@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Blog">
+  <div class="max-w-3xl mx-auto">
+    <header class="mb-8">
+      <h1 class="mb-2">Blog</h1>
+      <p class="text-gray-700">
+        I share working notes, essays, and short updates on AI security, policy, and product strategy.
+        Use the forms below to post a new entry or leave a comment.
+      </p>
+    </header>
+
+    <section class="mb-10">
+      <h2 class="mb-4 pb-2 border-b border-gray-200">Post a new blog entry</h2>
+      <form name="blog-post" method="POST" data-netlify="true" class="space-y-4">
+        <input type="hidden" name="form-name" value="blog-post" />
+        <div>
+          <label class="block text-sm font-semibold text-gray-900" for="post-title">Title</label>
+          <input
+            id="post-title"
+            name="title"
+            type="text"
+            required
+            class="mt-1 w-full rounded border border-gray-200 px-3 py-2"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-900" for="post-body">Post</label>
+          <textarea
+            id="post-body"
+            name="body"
+            rows="6"
+            required
+            class="mt-1 w-full rounded border border-gray-200 px-3 py-2"
+          ></textarea>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-900" for="post-author">Your name</label>
+          <input
+            id="post-author"
+            name="author"
+            type="text"
+            class="mt-1 w-full rounded border border-gray-200 px-3 py-2"
+          />
+        </div>
+        <button
+          type="submit"
+          class="text-sm px-4 py-2 rounded border border-gray-200 hover:border-gray-300"
+        >
+          Submit post
+        </button>
+      </form>
+    </section>
+
+    <section>
+      <h2 class="mb-4 pb-2 border-b border-gray-200">Leave a comment</h2>
+      <form name="blog-comment" method="POST" data-netlify="true" class="space-y-4">
+        <input type="hidden" name="form-name" value="blog-comment" />
+        <div>
+          <label class="block text-sm font-semibold text-gray-900" for="comment-name">Name</label>
+          <input
+            id="comment-name"
+            name="name"
+            type="text"
+            required
+            class="mt-1 w-full rounded border border-gray-200 px-3 py-2"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-900" for="comment-body">Comment</label>
+          <textarea
+            id="comment-body"
+            name="comment"
+            rows="4"
+            required
+            class="mt-1 w-full rounded border border-gray-200 px-3 py-2"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="text-sm px-4 py-2 rounded border border-gray-200 hover:border-gray-300"
+        >
+          Submit comment
+        </button>
+      </form>
+    </section>
+  </div>
+</Layout>
